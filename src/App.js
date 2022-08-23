@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MyProfile from './components/myProfile/myProfile';
-import Missions from './components/missions/Missions';
+// eslint-disable-next-line import/extensions
+import Missions from './components/missions/Missions.js';
 import Rockets from './components/rockets/rockets';
 import Nav from './components/pages/Nav';
 import './App.css';
