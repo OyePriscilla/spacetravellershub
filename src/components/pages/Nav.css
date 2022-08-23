@@ -1,0 +1,33 @@
+.subContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  border-bottom: 2px solid rgb(80, 80, 80);
+  margin-bottom: 1rem;
+  padding: 0.3rem 5rem 0.2rem 3rem;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  /* background-color: lightgray; */
+}
+
+.logoIcon {
+  height: 60px;
+  width: 60px;
+}
+
+.navigationLinks {
+  font-size: 24px;
+}
+
+/* NavLink:nth-child(2) {
+  border-right: "2px solid gray" 
+} */
+
+.navigationLinks > * {
+  padding: 1.2rem;
+  text-decoration: none;
+}
