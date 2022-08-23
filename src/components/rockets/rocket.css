@@ -1,0 +1,65 @@
+article {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.9rem;
+}
+
+.logoImg {
+  max-height: 200px;
+  max-width: 300px;
+}
+
+.description {
+  line-height: 1.9rem;
+  padding-right: 5rem;
+}
+
+.name {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.rocketStatus {
+  background-color: rgb(15, 126, 230);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.2rem;
+}
+
+.BookingBtn {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  max-width: 9rem;
+  margin-top: 0.4rem;
+}
+
+.reserveBtn {
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: rgb(0, 140, 255);
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border: 1px solid #fff;
+}
+
+.cancelBtn {
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+  background-color: rgb(231, 231, 231);
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border: 1px solid #fff;
+}
+
+.reserveBtn:active,
+.cancelBtn:active {
+  background-color: #316ff5;
+  box-shadow: 0 3px #666;
+  transform: translateY(4px);
+}
