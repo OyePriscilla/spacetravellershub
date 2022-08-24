@@ -1,14 +1,17 @@
 import React from 'react';
 import './rocket.css';
-// import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-// import { cancelReservation, reserveRocket } from '../../redux/rockets/rockets';
+import { useDispatch } from 'react-redux';
+import { reserveRocket } from '../../redux/rockets/rockets';
 
 const Rocket = ({
-  id, name, description, image,
+  id, name, description, image, reserved,
 }) => {
-  // const dispatch = useDispatch();
-  // dispatch(reserveRocket(id));
+  const dispatch = useDispatch();
+
+  const handleClick = () => {
+    dispatch(reserveRocket(id));
+  };
 
   return (
     <article>
@@ -18,24 +21,24 @@ const Rocket = ({
       <div className="details">
         <h2 className="name">{name}</h2>
         <div className="description">
-          <span className="rocketStatus" style={{ display: 'none' }}>RESERVED</span>
-          {' '}
+          {reserved && (<span className="rocketStatus">RESERVED</span>)}
           {description}
           .
         </div>
         <div className="BookingBtn">
-          <button type="button" className="reserveBtn" onClick={() => (reserveRocket(id))}>Reserve Rocket</button>
-          <button type="button" className="cancelBtn" style={{ display: 'none' }} onClick={() => (cancelReservation(id))}>Cancel Reservation</button>
+          <button type="button" className={reserved ? 'cancelBtn' : 'reserveBtn'} onClick={handleClick}>
+            {reserved ? 'Cancel Reservation' : 'Reserve Rocket'}
+          </button>
         </div>
       </div>
     </article>
   );
 };
-
 Rocket.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   id: PropTypes.number.isRequired,
+  reserved: PropTypes.bool.isRequired,
 };
 export default Rocket;
