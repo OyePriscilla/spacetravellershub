@@ -1,8 +1,16 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+
+import { JoinMission } from '../../redux/missions/missions';
 
 const Mission = (props) => {
-  const { missionName, description } = props;
+  const dispatch = useDispatch();
+
+  const { id, missionName, description } = props;
+
+  const onJoinMission = () => {
+    dispatch(JoinMission(id));
+  };
 
   return (
     <ul style={{
@@ -15,12 +23,13 @@ const Mission = (props) => {
         <span>NOT A MEMBER</span>
         {' '}
       </li>
-      <button type="button" style={{ padding: '10px', marginRight: '20px' }}>Join Mission</button>
+      <button onClick={onJoinMission} type="button" style={{ padding: '10px', marginRight: '20px' }}>Join Mission</button>
     </ul>
   );
 };
 
 Mission.propTypes = {
+  id: PropTypes.string.isRequired,
   missionName: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
 };
