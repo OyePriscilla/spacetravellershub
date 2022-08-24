@@ -6,7 +6,9 @@ import { JoinMission } from '../../redux/missions/missions';
 const Mission = (props) => {
   const dispatch = useDispatch();
 
-  const { id, missionName, description } = props;
+  const {
+    id, missionName, description, joinmission,
+  } = props;
 
   const onJoinMission = () => {
     dispatch(JoinMission(id));
@@ -23,7 +25,7 @@ const Mission = (props) => {
         <span>NOT A MEMBER</span>
         {' '}
       </li>
-      <button onClick={onJoinMission} type="button" style={{ padding: '10px', marginRight: '20px' }}>Join Mission</button>
+      <button onClick={onJoinMission} type="button" style={{ padding: '10px', marginRight: '20px' }}>{ joinmission ? 'Leave Mission' : 'Join Mission' }</button>
     </ul>
   );
 };
@@ -32,6 +34,7 @@ Mission.propTypes = {
   id: PropTypes.string.isRequired,
   missionName: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  joinmission: PropTypes.bool.isRequired,
 };
 
 export default Mission;
