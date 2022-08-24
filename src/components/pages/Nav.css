@@ -11,8 +11,6 @@
 .logoContainer {
   display: flex;
   align-items: center;
-
-  /* background-color: lightgray; */
 }
 
 .logoIcon {
@@ -24,9 +22,9 @@
   font-size: 24px;
 }
 
-/* NavLink:nth-child(2) {
+NavLink:nth-child(2) {
   border-right: "2px solid gray"
-} */
+}
 
 .navigationLinks > * {
   padding: 1.2rem;
