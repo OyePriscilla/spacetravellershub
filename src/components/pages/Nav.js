@@ -12,7 +12,7 @@ function Nav() {
         </div>
         <nav className="navLinks">
           <NavLink to="/">Rockets</NavLink>
-          <NavLink to="/Missions">Missions</NavLink>
+          <NavLink to="/missions">Missions</NavLink>
           <NavLink to="/myprofile">My Profile</NavLink>
         </nav>
       </div>
