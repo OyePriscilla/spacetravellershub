@@ -11,6 +11,7 @@
 .logoContainer {
   display: flex;
   align-items: center;
+
   /* background-color: lightgray; */
 }
 
@@ -24,7 +25,7 @@
 }
 
 /* NavLink:nth-child(2) {
-  border-right: "2px solid gray" 
+  border-right: "2px solid gray"
 } */
 
 .navigationLinks > * {
