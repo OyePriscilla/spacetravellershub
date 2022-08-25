@@ -35,7 +35,7 @@ const Mission = (props) => {
               </span>
             ) : (
               <span style={{
-                backgroundColor: 'blue', color: '#ffffff', padding: '5px', borderRadius: '8px', width: '100px', display: 'block', margin: '0 auto',
+                backgroundColor: 'blue', color: '#ffffff', padding: '5px', borderRadius: '8px', width: '110px', display: 'block', margin: '0 auto',
               }}
               >
                 ACTIVE MEMBER

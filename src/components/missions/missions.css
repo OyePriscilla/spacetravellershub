@@ -1,7 +1,8 @@
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  width: 90%;
+  margin: 0 4rem;
 }
 
 td {
@@ -21,4 +22,8 @@ td:nth-child(2) {
 
 td:nth-child(2) {
   padding-right: 10px;
+}
+
+footer {
+  margin-bottom: 40px;
 }
