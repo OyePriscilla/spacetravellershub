@@ -16,6 +16,7 @@ function Missions() {
           id={data.id}
           missionName={data.mission}
           description={data.description}
+          joinmission={data.joinmission}
         />
       ))}
     </div>
