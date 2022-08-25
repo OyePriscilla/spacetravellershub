@@ -2,7 +2,7 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 const LOADMISSION = 'spacetravellers/missions/LOADMISSION';
-const JOINMISSION = 'spacetravellers/missions/JOINMISSION';
+const TOGGLE_MISSION = 'spacetravellers/missions/TOGGLE_MISSION';
 
 const initialState = [];
 
@@ -10,13 +10,11 @@ export default (state = initialState, action) => {
   switch (action.type) {
     case `${LOADMISSION}/fulfilled`:
       return action.payload.data;
-    case `${JOINMISSION}/fulfilled`: {
-      const newState = state.map((mission) => {
-        if (mission.id !== action.payload) { return mission; }
-        return { ...mission, joinmission: false };
-      });
-      return newState;
-    }
+    case TOGGLE_MISSION:
+      return state.map((mission) => (mission.id === action.payload
+        ? { ...mission, joinmission: !mission.joinmission }
+        : mission
+      ));
     default:
       return state;
   }
@@ -35,7 +33,7 @@ export const fetchApi = createAsyncThunk(LOADMISSION, async () => {
   return { data };
 });
 
-export const JoinMission = (id) => ({
-  type: JOINMISSION,
+export const toggleMission = (id) => ({
+  type: TOGGLE_MISSION,
   payload: id,
 });
