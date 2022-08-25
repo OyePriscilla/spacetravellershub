@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test if MyProfile rendered 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <article
+    className="rocketProfileContainer"
+  >
+    <h1
+      className="title"
+    >
+      My Mission
+    </h1>
+    <p>
+      <em>
+        You don't have any missions joined at the moment
+      </em>
+    </p>
+  </article>
+  <article
+    className="rocketProfileContainer"
+  >
+    <h1
+      className="title"
+    >
+      My Rockets
+    </h1>
+    <p>
+      <em>
+        You don't have any reserves at the moment
+      </em>
+    </p>
+  </article>
+</div>
+`;

@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test if footer rendered 1`] = `
+<table>
+  <thead>
+    <tr>
+      <th>
+        Mission
+      </th>
+      <th>
+        Description
+      </th>
+      <th
+        style={
+          Object {
+            "paddingLeft": "30px",
+          }
+        }
+      >
+        Status
+      </th>
+      <th>
+          
+      </th>
+    </tr>
+  </thead>
+</table>
+`;
