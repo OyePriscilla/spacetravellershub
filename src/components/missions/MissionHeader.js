@@ -9,7 +9,7 @@ export default function MissionHeader() {
         <tr>
           <th>Mission</th>
           <th>Description</th>
-          <th>Status</th>
+          <th style={{ paddingLeft: '30px' }}>Status</th>
           <th>  </th>
         </tr>
       </thead>
