@@ -10,8 +10,9 @@ function Missions() {
   return (
     <div>
       <MissionHeader />
-      {mission.map((data) => (
+      {mission.map((data, index) => (
         <Mission
+          bgClass={index % 2 === 1 ? 'backgroundGrey' : ''}
           key={data.id}
           id={data.id}
           missionName={data.mission}
