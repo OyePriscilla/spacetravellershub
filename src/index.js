@@ -4,9 +4,6 @@ import { Provider } from 'react-redux';
 import './index.css';
 import App from './App';
 import store from './redux/configureStore';
-import { fetchApi } from './redux/missions/missions';
-
-store.dispatch(fetchApi());
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
