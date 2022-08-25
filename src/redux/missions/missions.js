@@ -6,7 +6,7 @@ const TOGGLE_MISSION = 'spacetravellers/missions/TOGGLE_MISSION';
 
 const initialState = [];
 
-export default (state = initialState, action) => {
+const missionsReducer = (state = initialState, action) => {
   switch (action.type) {
     case `${LOADMISSION}/fulfilled`:
       return action.payload.data;
@@ -37,3 +37,5 @@ export const toggleMission = (id) => ({
   type: TOGGLE_MISSION,
   payload: id,
 });
+
+export default missionsReducer;
