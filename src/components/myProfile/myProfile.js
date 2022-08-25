@@ -14,7 +14,7 @@ function MyProfile() {
   return (
     <div style={{ display: 'flex' }}>
       <article className="rocketProfileContainer">
-        <h1 className="title">My Rockets</h1>
+        <h1 className="title">My Mission</h1>
         {missionFilter.length !== 0 ? (
           <ul className="table">
             {missionFilter.map((mission) => (
