@@ -1,8 +1,8 @@
 th {
-    text-align: start;
-    border: 1px solid rgb(204, 199, 199);
-    border-bottom: none;
-    padding-left: 10px;
+  text-align: start;
+  border: 1px solid rgb(204, 199, 199);
+  border-bottom: none;
+  padding-left: 10px;
 }
 
 th:first-child {
@@ -12,6 +12,7 @@ th:first-child {
 th:nth-child(2) {
   width: 55%;
 }
+
 th:nth-child(3) {
   width: 15%;
 }
