@@ -66,6 +66,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ## Live Demo
 
 [Space Travel demo link](https://priscillaernestspacetravel.netlify.app/)
+![spacetravellershub](https://user-images.githubusercontent.com/92553079/187064333-46909568-7a2f-4d43-aa0b-a6066f0edc26.PNG)
 
 ## Authors
 
